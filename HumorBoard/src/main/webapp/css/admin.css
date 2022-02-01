@@ -1,0 +1,25 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#contents{
+    margin:0 auto;
+    width:65%;
+    padding-top:120px;
+    min-height:800px;
+    display:block;
+    
+    /* background-color:#f0f; test용으로 확인 후 삭제*/
+    }
+    
+    
+
+
+body{
+    min-width: 1200px;
+    font-size:0.75em;/*11~12px*/
+    font-family: arial, "Noto Sans KR" sans-serif;/*arial은 기본*/
+    letter-spacing: 0px;
+    color:#000000;
+}
