@@ -1,5 +1,7 @@
 package hb.di;
 
+import hb.model.MembersDTO;
+
 public interface MainService {
-	Object execute();
+	Object execute(MembersDTO dto);
 }
