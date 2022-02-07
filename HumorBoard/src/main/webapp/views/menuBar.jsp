@@ -5,7 +5,7 @@
     <!-- 상위 작은메뉴 -->
     <div id="topMenu">
         <a href="">ManagePage</a>
-        <a href="">MyPage</a>
+        <a href="mypage/mymain">MyPage</a>
         <a href="join/joinForm">Join</a>
         <a href="login">Login</a>
     </div>

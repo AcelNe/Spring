@@ -7,8 +7,6 @@
     <title>MainPage</title>
     <script src="../js/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
 <%  
     String user=null;
     if(session.getAttribute("id")!=null){
@@ -19,6 +17,8 @@
         System.out.println(user);
     }
 %>
+</head>
+<body>
 <script>
     console.log("<%=user%>");
 </script>
@@ -42,7 +42,7 @@
     <!-- userinfo 영역 session id가 있을 때-->
     <div id="uinfoArea">
         <%=user %>님
-        <a href="">MyPage</a>
+        <a href="mypage/mymain">MyPage</a>
         <a href="">MyBoard</a>
         <a href="logout">Log-out</a>
     </div>

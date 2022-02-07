@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import hb.di.MainService;
+import hb.di.JoinService;
 import hb.model.MembersDTO;
 
 @Controller
@@ -17,7 +17,7 @@ public class JoinController {
 	
 	@ModelAttribute("mainData")
 	Object mainData(MembersDTO mbdto) {
-		MainService ms=(MainService)cp.getContext().getBean("main",MainService.class);
+		JoinService ms=(JoinService)cp.getContext().getBean("joinForm",JoinService.class);
 		return ms.execute(mbdto);
 	}
 	
