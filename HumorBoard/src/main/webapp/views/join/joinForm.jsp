@@ -5,7 +5,7 @@
     <title>Join</title>
 </head>
 <body>
-    <form action="login">
+    <form action="joinAlert">
         ID: <input type="text" name="" id="memid">
         PW: <input type="password" name="" id="mempw">
         Name: <input type="text" name="" id="nickName">

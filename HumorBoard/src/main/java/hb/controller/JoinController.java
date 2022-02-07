@@ -26,4 +26,10 @@ public class JoinController {
 		System.out.println("JoinController joinFormPage run()");
 		return "/join/joinForm";
 	}
+	
+	@RequestMapping("/joinAlert")
+	String joinAlertPage() {
+		System.out.println("JoinController joinAlertPage run()");
+		return "/join/joinAlert";
+	}
 }
