@@ -1,6 +1,8 @@
 package hb.controller;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -21,14 +23,26 @@ public class MainController {
 	}
 	
 	@RequestMapping("/main")
-	String running() {
-		System.out.println("MainController running run()");
+	String mainPage() {
+		System.out.println("MainController mainPage run()");
 		return "main";
 	}
 	
-	@RequestMapping("/loginsuccess")
-	String loginpage(MembersDTO dto) {
+	@RequestMapping("/login")//login Page
+	String loginPage() {
+		System.out.println("MainController loginPage run()");
+		return "login_out/login";
+	}
+	
+	@RequestMapping("/loginsuccess") //login 성공하면 전환되는 page
+	String loginpage() {
 		System.out.println("MainController loginpage run()");
-		return "loginsuccess";
+		return "login_out/loginsuccess";
+	}
+	
+	@RequestMapping("/logout")
+	String logoutPage() {
+		System.out.println("MainController logoutPage run()");
+		return "login_out/logout";
 	}
 }
