@@ -4,6 +4,8 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import hb.model.BoardDTO;
+import hb.model.BoardMapper;
 import hb.model.MembersDTO;
 import hb.model.MembersMapper;
 
@@ -12,10 +14,14 @@ public class Main implements MainService {
 	
 	@Resource
 	MembersMapper mm;
+	@Resource
+	BoardMapper bm;
 	
 	@Override
 	public Object execute(MembersDTO dto) {
-		return null;
+		BoardDTO boDto=new BoardDTO();
+		boDto.setCate("자유");
+		return bm.boardList(boDto);
 	}
 
 }

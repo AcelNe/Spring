@@ -6,7 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import hb.di.BoardService;
 import hb.di.MainService;
+import hb.model.BoardDTO;
 import hb.model.MembersDTO;
 
 @Controller
@@ -18,6 +20,11 @@ public class MainController {
 	Object mainData(MembersDTO mbdto) {
 		MainService ms=(MainService)cp.getContext().getBean("main",MainService.class);
 		return ms.execute(mbdto);
+	}
+	
+	@ModelAttribute("boardData")
+	Object boardData(BoardDTO dto) {
+		return dto;
 	}
 	
 	@RequestMapping("/main")

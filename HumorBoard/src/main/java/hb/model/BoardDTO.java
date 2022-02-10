@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class BoardDTO {
-	int no, views;
+	int num, views;
 	String cate, title, writer;
 	Date date;
 }
