@@ -28,9 +28,26 @@
 
     <!-- 자유 게시판 영역 -->
     <div id="freeArea" class="boardArea">
-        <h4>자유게시판</h4>
+        <a href="board/freeboard"><h4>자유게시판</h4></a>
             <div>
-                <a href="">title</a>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>No</td>
+                            <td>Title</td>
+                            <td>Views</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${mainData}" var="dto" varStatus="no">
+                        <tr>
+                            <td>${no.index+1}</td>
+                            <td>${dto.title}</td>
+                            <td>${dto.views}</td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
             </div>
     </div>
 
@@ -49,7 +66,7 @@
 
     <!-- 공지사항 영역 -->
     <div id="noticeArea" class="boardArea">
-        <h4>자유게시판</h4>
+        <a href=""><h4>공지사항</h4></a>
             <div>
                 <a href="">title</a> date
             </div>
@@ -57,7 +74,7 @@
 
     <!-- 회원게시판 영역 -->
     <div id="memberArea" class="boardArea">
-        <h4>자유게시판</h4>
+        <a href=""><h4>회원게시판</h4></a>
             <div>
                 <a href="">title</a> name
             </div>

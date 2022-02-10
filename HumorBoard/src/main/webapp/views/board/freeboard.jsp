@@ -8,18 +8,18 @@
             <td>No</td>
             <td>Title</td>
             <td>Date</td>
-            <td>View</td>
+            <td>Views</td>
         </tr>
     </thead>
     <tbody>
-    <c:foreach item="mainData" var="dto" varStatus="no">
+    <c:forEach items="${mainData}" var="dto" varStatus="no">
         <tr>
-            <td>${dto.no}</td>
+            <td>${no.index+1}</td>
             <td>${dto.title}</td>
             <td>${dto.date}</td>
-            <td>${dto.view}</td>
+            <td>${dto.views}</td>
         </tr>
-    </c:foreach>
+    </c:forEach>
     </tbody>
     <tfoot>
         <tr>
