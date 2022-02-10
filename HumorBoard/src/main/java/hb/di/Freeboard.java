@@ -14,8 +14,7 @@ public class Freeboard implements BoardService {
 	
 	@Override
 	public Object execute(BoardDTO dto) {
-		// TODO Auto-generated method stub
-		return null;
+		dto.setCate("자유");		
+		return bm.boardList(dto);
 	}
-
 }
