@@ -13,17 +13,20 @@
     </thead>
     <tbody>
     <c:forEach items="${mainData}" var="dto" varStatus="no">
+        <a href="freepost?cate=자유,date=${dto.date}">
         <tr>
             <td>${no.index+1}</td>
             <td>${dto.title}</td>
             <td>${dto.date}</td>
             <td>${dto.views}</td>
         </tr>
+        </a>
     </c:forEach>
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="4"></td>
+            <td colspan="3">게시글 페이지 번호</td>
+            <td><a href="freeinsert">글 쓰기</a></td>
         </tr>
     </tfoot>
 </table>

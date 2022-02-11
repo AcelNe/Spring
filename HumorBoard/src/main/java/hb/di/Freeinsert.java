@@ -14,7 +14,7 @@ public class Freeinsert implements BoardService {
 	
 	@Override
 	public Object execute(BoardDTO dto) {
-		System.out.println("freeInsert.java execute() run");
+		System.out.println("FreeInsert.java execute() run");
 		return null;
 	}
 }
