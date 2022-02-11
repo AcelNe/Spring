@@ -12,13 +12,13 @@
 
     <!-- 상단 배너 -->
     <div id="banner" style="background-color: pink;">
-        <h1 style="font-weight: bold; font-size: 35px;">Humor Board</h1>
+        <a href="/main"><h1 style="font-weight: bold; font-size: 35px;">Humor Board</h1></a>
     </div>
 
     <!-- 배너 아래 게시판 메뉴바 -->
     <div id="menuBar">
         <a href="">공지사항</a>
-        <a href="">자유게시판</a>
+        <a href="/board/freeboard">자유게시판</a>
         <a href="">회원게시판</a>
         <a href="">나의게시판</a>
     </div>

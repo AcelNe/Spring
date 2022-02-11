@@ -31,7 +31,7 @@ public class BoardController {
 	
 	@RequestMapping("board/{service}")
 	String pageRuning(UrlDTO url) {
-		System.out.println("BoardController pageRunning run(): "+url.getService());
+		System.out.println("BoardController pageRunning() run: "+url.getService());
 		return "boardTemplate";
 	}
 }
